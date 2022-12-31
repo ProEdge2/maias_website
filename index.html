@@ -22,7 +22,7 @@
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-            document.documentElement.classList.add("dark");
+            document.documentElement.classList.add("light");
         } else {
             document.documentElement.classList.remove("dark");
         }
@@ -53,8 +53,8 @@
                                 <!-- light and dark mode button -->
 <!--                                <button id="theme-toggle-mobile" type="button"-->
 <!--                                    class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">-->
-<!--&lt;!&ndash;                                    <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl hidden"></i>&ndash;&gt;-->
+<!--                                    <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>-->
+<!--                                    <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl hidden"></i>-->
 <!--                                </button>-->
                                 <!-- mobile toggle button -->
                                 <button id="menu-toggle" type="button" class="menu-toggle-btn">
@@ -105,7 +105,7 @@
                                     </span> Contact </a>
                             </li>
                             <li>
-                                <!-- light and dark mode button -->
+<!--                                 light and dark mode button -->
 <!--                                <button id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">-->
 <!--                                    <i id="theme-toggle-dark-icon" class="fa-solid text-xl fa-moon hidden"></i>-->
 <!--                                    <i id="theme- -light-icon" class="fa-solid fa-sun text-xl hidden"></i>-->
