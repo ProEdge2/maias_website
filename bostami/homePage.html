@@ -18,7 +18,7 @@
     <!--=== main css ===-->
     <link rel="stylesheet" href="./css/tailwind.css" />
     <link rel="stylesheet" href="./css/custom.css" />
-    <title>Home - Bostami Tailwind CSS Personal Portfolio HTML Template </title>
+    <title>Maia Baker's Personal Portfolio</title>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -47,7 +47,7 @@
                         <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                             <!-- website logo -->
                             <a class="text-5xl font-semibold" href="/">
-                                <img class="h-[26px] lg:h-[32px]" src="./images/logo/logo.png" alt="logo" />
+                                <img class="h-[27px] lg:h-[50px]" src="https://see.fontimg.com/api/renderfont4/519DV/eyJyIjoiZnMiLCJoIjo3OCwidyI6MTAwMCwiZnMiOjc4LCJmZ2MiOiIjRUM1MDY5IiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TWFpYSBCYWtlcg/better-grade.png" alt="logo" />
                             </a>
                             <div class="flex items-center">
                                 <!-- light and dark mode button -->
@@ -196,8 +196,20 @@
 <!--                        </a>-->
 <!--                    </div>-->
                     <!-- dowanload button -->
-                    <button class="dowanload-btn">
-                        <img src="./images/icons/dowanload.png" alt="icon" class="mr-2" />Download CV </button>
+
+                    <button class="dowanload-btn"
+                    >
+                        <a
+                                class="button"
+                                href="https://res.cloudinary.com/dx7wj0tty/raw/upload/v1672461001/Maia_Baker_o33kuh.vcf"
+                                download="maia-baker"
+                        >
+                            <span class="button-text">Download CV</span>
+                            <span class="button-icon fa fa-download"></span>
+                            <!-- <a href="#" download="path_to_file" class="button-icon fa fa-download"></a> -->
+                        </a>
+
+                       </button>
                 </div>
                 <!-- Home page contant End -->
             </div>
